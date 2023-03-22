@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.letstravel.HelloController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1315.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@final.jpg" />
+         </image>
+      </ImageView>
+      <Separator fx:id="sep1" blendMode="ADD" layoutX="-2.0" layoutY="222.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.68" prefHeight="20.0" prefWidth="1315.0">
+         <effect>
+            <ColorAdjust brightness="-0.24" contrast="-0.22" saturation="-0.21" />
+         </effect>
+      </Separator>
+      <Label fx:id="l_explore" layoutX="28.0" layoutY="25.0" prefHeight="52.0" prefWidth="164.0" text="Explore">
+         <font>
+            <Font name="Sylfaen" size="44.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="738.0" layoutY="85.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" text="search">
+         <font>
+            <Font name="Sylfaen" size="18.0" />
+         </font>
+      </RadioButton>
+      <ImageView fx:id="iv_food" fitHeight="77.0" fitWidth="60.0" layoutX="461.0" layoutY="140.0" onMouseClicked="#foodclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images__3_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iv_hotel" fitHeight="95.0" fitWidth="96.0" layoutX="125.0" layoutY="125.0" onMouseClicked="#hotelsclicked" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="530.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="1095.0" AnchorPane.topAnchor="125.0">
+         <image>
+            <Image url="@download-removebg-preview.png" />
+         </image>
+         <viewport>
+            <Rectangle2D width="95.0" />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="iv_places" fitHeight="77.0" fitWidth="77.0" layoutX="283.0" layoutY="134.0" onMouseClicked="#placesclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images__2_-removebg-preview.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.93" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="tf_search" layoutX="28.0" layoutY="89.0" prefHeight="36.0" prefWidth="686.0" text="citiy......">
+         <font>
+            <Font name="Sylfaen" size="8.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

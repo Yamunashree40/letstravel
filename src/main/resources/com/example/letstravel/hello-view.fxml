@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.letstravel.HelloController">
+   <children>
+      <ImageView fx:id="iv_bg1" fitHeight="810.0" fitWidth="1500.0" layoutX="-123.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-44.0" AnchorPane.leftAnchor="-123.0" AnchorPane.rightAnchor="-62.0" AnchorPane.topAnchor="-16.0">
+         <image>
+            <Image url="@desktop-wallpaper-10-los-angeles-aesthetic-summer-trips.jpg" />
+         </image>
+         <effect>
+            <Glow level="0.16" />
+         </effect>
+      </ImageView>
+      <Label fx:id="l_lets" layoutX="539.0" layoutY="211.0" prefHeight="69.0" prefWidth="136.0" text="Lets" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Italic" size="75.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_travel" layoutX="509.0" layoutY="295.0" text="Travel" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Italic" size="75.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="iv_plane" fitHeight="84.0" fitWidth="158.0" layoutX="567.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" rotate="-29.1">
+         <image>
+            <Image url="@images__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bt_go" layoutX="577.0" layoutY="457.0" mnemonicParsing="false" onAction="#goclicked" opacity="0.5" text="Go" textFill="#532c2c">
+         <font>
+            <Font name="Times New Roman Italic" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
