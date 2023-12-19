@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+
+<?import javafx.scene.control.Separator?>
+<AnchorPane onMousePressed="#click" stylesheets="@../../values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HotelItemController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="111.0" layoutY="8.0" prefHeight="325.0" prefWidth="725.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" >
+         <children>
+            <VBox spacing="30">
+               <ImageView fx:id="img" fitHeight="240.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="false" style="-fx-margin-top: -50px;">
+                  <image>
+                     <Image url="@../../img/cherry.png" />
+                  </image>
+               </ImageView>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="10">
+                     <Label fx:id="HotelnameLabel" maxWidth="Infinity" prefHeight="7.0" prefWidth="537.0" text="Cherry" alignment="CENTER">
+                        <font>
+                           <Font name="Cambria" size="24.0" />
+                        </font>
+                     </Label>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="90.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="10">
+                     <Label fx:id="ratingLabel" maxWidth="Infinity" prefHeight="9.0" prefWidth="101.0" text="/$0.99" alignment="CENTER">
+                        <font>
+                           <Font name="Cambria Bold" size="18.0" />
+                        </font>
+                     </Label>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="card-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

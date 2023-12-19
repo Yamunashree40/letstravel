@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HelloController">
+   <children>
+      <ImageView fitHeight="761.0" fitWidth="1329.0" layoutX="-6.0" layoutY="-1.0" onMouseClicked="#backexplore" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/final.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="757.0" fitWidth="1324.0" layoutY="-1.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/7630043.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d78fa96e" height="632.0" layoutX="305.0" layoutY="72.0" opacity="0.53" stroke="#d78fa9" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 15;" width="665.0" />
+      <Button fx:id="bt_signcreate" layoutX="592.0" layoutY="515.0" mnemonicParsing="false" onAction="#createclicked" prefHeight="31.0" prefWidth="68.0" text="Create">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_signclear" layoutX="703.0" layoutY="514.0" mnemonicParsing="false" onAction="#clearclicked" onMouseClicked="#clearclicked" text="clear">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="iv_arrow" fitHeight="26.0" fitWidth="28.0" layoutX="61.0" layoutY="46.0" onMouseClicked="#signback" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="570.0" layoutY="142.0" prefHeight="54.0" prefWidth="127.0" text="Sign Up">
+         <font>
+            <Font name="HP Simplified Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="265.0" prefHeight="34.0" prefWidth="158.0" text="Username">
+         <font>
+            <Font name="HP Simplified" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_signuser" layoutX="545.0" layoutY="263.0" prefHeight="26.0" prefWidth="309.0" promptText="username" style="-fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="413.0" layoutY="324.0" prefHeight="34.0" prefWidth="158.0" text="Email">
+         <font>
+            <Font name="HP Simplified" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_signemail" layoutX="545.0" layoutY="322.0" prefHeight="26.0" prefWidth="309.0" promptText="email" style="-fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="412.0" layoutY="385.0" prefHeight="36.0" prefWidth="126.0" text="Password">
+         <font>
+            <Font name="HP Simplified" size="25.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tf_signpass" layoutX="545.0" layoutY="380.0" prefHeight="40.0" prefWidth="306.0" promptText="password" style="-fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="333.0" layoutY="440.0" prefHeight="36.0" prefWidth="210.0" text="Confirm Passowrd">
+         <font>
+            <Font name="HP Simplified" size="25.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tf_signcurrpass" layoutX="547.0" layoutY="438.0" prefHeight="40.0" prefWidth="306.0" promptText="confirm password" style="-fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="s_indication" layoutX="428.0" layoutY="582.0" prefHeight="66.0" prefWidth="467.0">
+         <font>
+            <Font name="Times New Roman Italic" size="40.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

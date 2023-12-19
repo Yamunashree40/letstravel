@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMousePressed="#click" prefHeight="478.0" prefWidth="750.0" style="-fx-background-radius: 30;" stylesheets="@../../values/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AttItemController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="111.0" layoutY="0.0" prefHeight="525.0" prefWidth="725.0" style="-fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 30;">
+               <children>
+                  <ImageView fx:id="img" fitHeight="405.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="false" style="-fx-margin-top: -50px;">
+                     <image>
+                        <Image url="@../../img/attractive.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox spacing="30" />
+            <HBox alignment="CENTER" spacing="10" />
+            <Separator prefWidth="200.0" />
+            <VBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="AttnameLabel" alignment="TOP_CENTER" maxWidth="Infinity" prefHeight="86.0" prefWidth="575.0" text="Cherry">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="83.0" prefWidth="750.0" spacing="10">
+                     <Label fx:id="RatingLabel" alignment="TOP_CENTER" maxWidth="Infinity" prefHeight="61.0" prefWidth="102.0" text="\$0.99">
+                        <font>
+                           <Font name="Cambria Bold" size="18.0" />
+                        </font>
+                     </Label>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="card-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

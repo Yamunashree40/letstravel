@@ -1,0 +1,50 @@
+Apr 25, 2023 11:28:49 PM main.Main main
+INFO: Logger Intialized
+Apr 25, 2023 11:28:49 PM main.Main start
+INFO: Start Function Initialized
+Apr 25, 2023 11:28:50 PM main.Main start
+INFO: Welcome Screen Displayed
+Apr 25, 2023 11:28:51 PM Controller.HelloController globeclicked
+INFO: Globe is Clicked
+Apr 25, 2023 11:28:51 PM Controller.HelloController globeclicked
+INFO: Redirecting to Sign In Page
+Apr 25, 2023 11:28:51 PM Controller.HelloController globeclicked
+INFO: Sign In Page Displayed
+Apr 25, 2023 11:29:00 PM Controller.HelloController submitclicked
+INFO: Submit Button is Clicked
+Apr 25, 2023 11:29:00 PM Controller.HelloController validate
+INFO: Validate Function Initialized
+Apr 25, 2023 11:29:00 PM Controller.HelloController validate
+INFO: Initializing Connection to database...
+Apr 25, 2023 11:29:00 PM Controller.HelloController validate
+INFO: Connected to database successfully...
+Apr 25, 2023 11:29:00 PM Controller.HelloController validate
+INFO: Checking Credentials....
+Apr 25, 2023 11:29:00 PM Controller.HelloController validate
+INFO: Successfully Signed In....
+Apr 25, 2023 11:29:00 PM Controller.HelloController submitclicked
+INFO: Redirecting to Explore Page
+Apr 25, 2023 11:29:01 PM Controller.HelloController submitclicked
+INFO: Explore Page Displayed...
+Apr 25, 2023 11:29:08 PM Controller.HelloController SearchClick
+INFO: Search Button Clicked...
+Apr 25, 2023 11:29:08 PM Controller.HelloController SearchClick
+INFO: City Name is Assigned...
+Apr 25, 2023 11:29:10 PM Controller.HelloController foodclicked
+INFO: Restaurant Button Clicked...
+Apr 25, 2023 11:29:10 PM Controller.HelloController foodclicked
+INFO: Redirecting to Restaurant Page...
+Apr 25, 2023 11:29:10 PM Controller.RestaurantController initialize
+INFO: Hotel Display Initialized...
+Apr 25, 2023 11:29:10 PM Controller.RestaurantController getData
+INFO: Data Gathering Initialized...
+Apr 25, 2023 11:29:10 PM Controller.RestaurantController getRestaurantsData
+INFO: Restaurant Webscrape Initialized...
+Apr 25, 2023 11:29:11 PM Controller.RestaurantController getRestaurantsData
+INFO: Restaurant Webscrape Completed...
+Apr 25, 2023 11:29:11 PM Controller.RestaurantController getData
+INFO: Data Gathering Completed...
+Apr 25, 2023 11:29:11 PM Controller.RestaurantController initialize
+INFO: Restaurant 0 Initialized...
+Apr 25, 2023 11:29:23 PM main.Main main
+INFO: End of Program

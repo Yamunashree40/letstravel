@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HelloController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1315.0" layoutX="-2.0" onMouseClicked="#backexplore" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/final.jpg" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="-2.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../img/7630043.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="l_explore" layoutX="556.0" layoutY="218.0" prefHeight="78.0" prefWidth="225.0" text="Explore">
+         <font>
+            <Font name="HP Simplified" size="69.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3766519319643533" centerY="0.49242424964904785" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.49394917488098145" green="0.20399999618530273" blue="0.5099999904632568" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8117647171020508" green="0.4588235318660736" blue="0.5490196347236633" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="iv_food" fitHeight="80.0" fitWidth="90.0" layoutX="800.0" layoutY="426.0" onMouseClicked="#foodclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images__3_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iv_hotel" fitHeight="167.0" fitWidth="169.0" layoutX="421.0" layoutY="389.0" onMouseClicked="#hotelsclicked" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="421.0" AnchorPane.rightAnchor="727.0" AnchorPane.topAnchor="389.0">
+         <image>
+            <Image url="@../img/download-removebg-preview.png" />
+         </image>
+         <viewport>
+            <Rectangle2D width="95.0" />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="iv_places" fitHeight="107.0" fitWidth="107.0" layoutX="616.0" layoutY="421.0" onMouseClicked="#placesclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images__2_-removebg-preview.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.93" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="tf_search" alignment="CENTER" layoutX="332.0" layoutY="328.0" prefHeight="36.0" prefWidth="686.0" promptText="Enter City Name" style="-fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;">
+         <font>
+            <Font name="Sylfaen" size="22.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="iv_arrowexplore" fitHeight="26.0" fitWidth="28.0" layoutX="15.0" layoutY="40.0" onMouseClicked="#signback" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iv_exlpore" fitHeight="55.0" fitWidth="51.0" layoutX="1036.0" layoutY="327.0" onMouseClicked="#SearchClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/explore.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
